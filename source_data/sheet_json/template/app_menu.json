@@ -1,0 +1,38 @@
+{
+  "flow_type": "template",
+  "flow_name": "app_menu",
+  "status": "released",
+  "rows": [
+    {
+      "type": "button",
+      "name": "menu_home",
+      "value": "Home",
+      "action_list": "click | go_to:home_screen"
+    },
+    {
+      "type": "button",
+      "name": "menu_about",
+      "value": "About Us",
+      "action_list": "click | go_to:about_page"
+    },
+    {
+      "type": "button",
+      "name": "menu_blog",
+      "value": "Blog",
+      "action_list": "click | go_to:blog_list"
+    },
+    {
+      "type": "button",
+      "name": "menu_contact",
+      "value": "Contact",
+      "action_list": "click | go_to:contact_page"
+    },
+    {
+      "type": "button",
+      "name": "menu_reset",
+      "value": "Reset App",
+      "action_list": "click | reset_app",
+      "comments": "Clear all saved data"
+    }
+  ]
+}

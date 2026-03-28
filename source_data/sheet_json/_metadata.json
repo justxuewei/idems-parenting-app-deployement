@@ -1,0 +1,42 @@
+[
+  {
+    "flow_type": "template",
+    "flow_name": "about_page",
+    "_source": {
+      "name": "sheets",
+      "path": "my_website.xlsx"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "app_menu",
+    "_source": {
+      "name": "sheets",
+      "path": "my_website.xlsx"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "blog_list",
+    "_source": {
+      "name": "sheets",
+      "path": "my_website.xlsx"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "contact_page",
+    "_source": {
+      "name": "sheets",
+      "path": "my_website.xlsx"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "home_screen",
+    "_source": {
+      "name": "sheets",
+      "path": "my_website.xlsx"
+    }
+  }
+]

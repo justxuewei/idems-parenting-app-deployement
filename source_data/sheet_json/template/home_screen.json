@@ -1,0 +1,36 @@
+{
+  "flow_type": "template",
+  "flow_name": "home_screen",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "hero_title",
+      "value": "Welcome to My Website",
+      "comments": "Main hero heading"
+    },
+    {
+      "type": "text",
+      "name": "hero_subtitle",
+      "value": "A simple app built with Open App Builder. Explore the sections below."
+    },
+    {
+      "type": "button",
+      "name": "btn_about",
+      "value": "About Us",
+      "action_list": "click | go_to:about_page"
+    },
+    {
+      "type": "button",
+      "name": "btn_blog",
+      "value": "Read Our Blog",
+      "action_list": "click | go_to:blog_list"
+    },
+    {
+      "type": "button",
+      "name": "btn_contact",
+      "value": "Contact Us",
+      "action_list": "click | go_to:contact_page"
+    }
+  ]
+}

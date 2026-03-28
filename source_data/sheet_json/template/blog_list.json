@@ -1,0 +1,66 @@
+{
+  "flow_type": "template",
+  "flow_name": "blog_list",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "blog_title",
+      "value": "Blog"
+    },
+    {
+      "type": "title",
+      "name": "post1_title",
+      "value": "Getting Started with Open App Builder",
+      "comments": "Blog post 1"
+    },
+    {
+      "type": "text",
+      "name": "post1_date",
+      "value": "March 20, 2026"
+    },
+    {
+      "type": "text",
+      "name": "post1_excerpt",
+      "value": "Learn how to set up your first app in minutes using spreadsheets as your content source."
+    },
+    {
+      "type": "title",
+      "name": "post2_title",
+      "value": "Why Content-First Design Matters",
+      "comments": "Blog post 2"
+    },
+    {
+      "type": "text",
+      "name": "post2_date",
+      "value": "March 25, 2026"
+    },
+    {
+      "type": "text",
+      "name": "post2_excerpt",
+      "value": "Discover how separating content from code allows non-developers to shape the user experience."
+    },
+    {
+      "type": "title",
+      "name": "post3_title",
+      "value": "Deploying to a VPS with Nginx",
+      "comments": "Blog post 3"
+    },
+    {
+      "type": "text",
+      "name": "post3_date",
+      "value": "March 28, 2026"
+    },
+    {
+      "type": "text",
+      "name": "post3_excerpt",
+      "value": "A step-by-step guide to hosting your app on Ubuntu with nginx — no Firebase required."
+    },
+    {
+      "type": "button",
+      "name": "btn_back",
+      "value": "← Back to Home",
+      "action_list": "click | go_to:home_screen"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "flow_type": "template",
+  "flow_name": "contact_page",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "contact_title",
+      "value": "Contact Us"
+    },
+    {
+      "type": "text",
+      "name": "contact_intro",
+      "value": "Have a question or want to work together? Reach out!"
+    },
+    {
+      "type": "text",
+      "name": "contact_email",
+      "value": "Email: hello@mywebsite.example"
+    },
+    {
+      "type": "text",
+      "name": "contact_github",
+      "value": "GitHub: github.com/my-org/my-website"
+    },
+    {
+      "type": "button",
+      "name": "btn_back",
+      "value": "← Back to Home",
+      "action_list": "click | go_to:home_screen"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "about_page",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "about_title",
+      "value": "About Us"
+    },
+    {
+      "type": "text",
+      "name": "about_body",
+      "value": "We are a small team passionate about building useful tools for everyone. Our mission is to make technology accessible and impactful."
+    },
+    {
+      "type": "title",
+      "name": "team_title",
+      "value": "Our Team"
+    },
+    {
+      "type": "text",
+      "name": "team_member_1",
+      "value": "Alice — Product Designer"
+    },
+    {
+      "type": "text",
+      "name": "team_member_2",
+      "value": "Bob — Lead Developer"
+    },
+    {
+      "type": "text",
+      "name": "team_member_3",
+      "value": "Carol — Content Strategist"
+    },
+    {
+      "type": "button",
+      "name": "btn_back",
+      "value": "← Back to Home",
+      "action_list": "click | go_to:home_screen"
+    }
+  ]
+}
