@@ -5,8 +5,8 @@ const config = generateDeploymentConfig("my_website");
 config.google_drive = { assets_folder_id: "assets", sheets_folder_id: "sheets" };
 config.app_data.output_path = "./app_data";
 
-config.app_config.APP_HEADER_DEFAULTS.title = "My Website";
-config.app_config.APP_SIDEMENU_DEFAULTS.title = "My Website";
+config.app_config.APP_HEADER_DEFAULTS.title = "ParentingApp";
+config.app_config.APP_SIDEMENU_DEFAULTS.title = "ParentingApp";
 config.app_config.APP_ROUTE_DEFAULTS = {
   home_route: "/template/registration",
   fallback_route: "/template/registration",
