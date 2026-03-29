@@ -27,22 +27,7 @@ yarn workflow sync_local --deployment my_website --watch
 
 ---
 
-## 3. Preview Locally
-
-**If the dev server is already running** (`yarn start:local`), changes are picked up automatically after ~15 seconds.
-
-**If the dev server is not running**, start it from the repo root:
-```bash
-NODE_OPTIONS="--max-old-space-size=6144" npx concurrently --kill-others --raw \
-  "ng serve --host 0.0.0.0 --disable-host-check" \
-  "yarn workflow sync_local --watch"
-```
-
-Open the app at `http://localhost:4200`.
-
----
-
-## 4. Commit and Push to GitHub
+## 3. Commit and Push to GitHub
 
 ```bash
 cd .idems_app/deployments/my_website
@@ -59,7 +44,7 @@ This prompts for a version bump, then pushes a `content/vX.X.X` branch and tag t
 
 ---
 
-## 5. Deploy to Production (Ubuntu + nginx)
+## 4. Deploy to Production (Ubuntu + nginx)
 
 ### Build and copy frontend
 
