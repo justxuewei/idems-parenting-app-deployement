@@ -38,5 +38,13 @@
       "name": "sheets",
       "path": "my_website.xlsx"
     }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "registration",
+    "_source": {
+      "name": "sheets",
+      "path": "my_website.xlsx"
+    }
   }
 ]

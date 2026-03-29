@@ -4,6 +4,17 @@
   "status": "released",
   "rows": [
     {
+      "type": "text",
+      "name": "greeting",
+      "value": "Hello, @fields.user_name!",
+      "comments": "Personalized greeting"
+    },
+    {
+      "type": "text",
+      "name": "login_count",
+      "value": "You have been logged in @fields.login_count times"
+    },
+    {
       "type": "title",
       "name": "hero_title",
       "value": "Welcome to My Website",

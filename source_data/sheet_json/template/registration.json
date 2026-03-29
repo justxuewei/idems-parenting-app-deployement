@@ -1,0 +1,45 @@
+{
+  "flow_type": "template",
+  "flow_name": "registration",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "reg_title",
+      "value": "Register",
+      "condition": "!@fields.phone_number"
+    },
+    {
+      "type": "text_box",
+      "name": "name_input",
+      "parameter_list": "placeholder: Your name",
+      "condition": "!@fields.phone_number"
+    },
+    {
+      "type": "text_box",
+      "name": "phone_input",
+      "parameter_list": "placeholder: Phone number",
+      "condition": "!@fields.phone_number"
+    },
+    {
+      "type": "button",
+      "name": "btn_register",
+      "value": "Register",
+      "action_list": "click | set_field : user_name : @local.name_input ;; click | set_field : phone_number : @local.phone_input ;; click | go_to : home_screen",
+      "condition": "!@fields.phone_number"
+    },
+    {
+      "type": "title",
+      "name": "reg_welcome_back",
+      "value": "Welcome back, @fields.user_name!",
+      "condition": "@fields.phone_number"
+    },
+    {
+      "type": "button",
+      "name": "btn_go_home",
+      "value": "Continue",
+      "action_list": "click | go_to : home_screen",
+      "condition": "@fields.phone_number"
+    }
+  ]
+}
