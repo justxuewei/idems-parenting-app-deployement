@@ -61,11 +61,36 @@ This prompts for a version bump, then pushes a `content/vX.X.X` branch and tag t
 
 ## 5. Deploy to Production (Ubuntu + nginx)
 
+### Build and copy frontend
+
 From the repo root:
 ```bash
 yarn build
-rsync -av www/ user@your-server:/var/www/myapp/
+rsync -av www/ /var/www/my_website/
 ```
+
+### Start services
+
+From `packages/server/docker/`:
+```bash
+# First time or after container removal
+docker compose up -d
+
+# If containers already exist but are stopped
+docker start $(docker ps -aq)
+```
+
+### Stop services
+
+```bash
+docker compose down          # stop and remove containers/networks
+# or just stop without removing:
+docker stop $(docker ps -q)
+```
+
+> **Note:** `docker compose down` only removes containers it created in that session.
+> If containers were started in a previous session, use `docker rm <name>` to remove
+> stale containers before running `docker compose up -d` again.
 
 ---
 
